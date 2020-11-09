@@ -1,6 +1,6 @@
 variable "loc" {
     description = "Default Azure Region"
-    default     = "West Europe"
+    default     = "westeurope"
 }
 
 variable "tags" {
@@ -8,4 +8,8 @@ variable "tags" {
         source  = "citadel"
         env     = "training"
     }
+}
+
+variable "weapplocs" {
+    default = ["eastus2", "uksouth", "centralindia"]
 }
