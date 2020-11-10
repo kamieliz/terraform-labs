@@ -10,6 +10,8 @@ variable "tags" {
     }
 }
 
-variable "weapplocs" {
-    default = ["eastus2", "uksouth", "centralindia"]
+variable "webapplocs" {
+    description = "list of locations for web apps"
+    type        = "list"
+    default = []
 }
